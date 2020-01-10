@@ -5,9 +5,13 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "mono:pixelsize=16:antialias=true:autohint=true";
-static char *font2[] = { "Inconsolata for Powerline:pixelsize=16:antialias=true:autohint=true" };
-static int borderpx = 2;
+static char *font = "ProggyCleanTTCE Nerd Font Mono:size=12";
+
+//static char *font = "Misc Termsyn:pixelsize=16:antialias=true:autohint=true";
+//static char *font2[] = { "Fira Code Regular Nerd Font Complete:pixelsize=16:antialias=true:autohint=true" };
+//static char *font2[] = {"Inconsolata for Powerline:pixelsize=16:antialias=true:autohint=true"};
+static char *font2[] = {"ProggyCleanTTCE Nerd Font Mono:size=12"};
+static int borderpx = 4;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -17,7 +21,7 @@ static int borderpx = 2;
  * 4: value of shell in /etc/passwd
  * 5: value of shell in config.h
  */
-static char *shell = "/bin/sh";
+static char *shell = "/bin/zsh";
 char *utmp = NULL;
 char *stty_args = "stty raw pass8 nl -echo -iexten -cstopb 38400";
 
@@ -83,43 +87,18 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
+#include "/home/noah/.cache/wal/colors-wal-st.h"
+
 /* bg opacity */
-float alpha = 0.92;
-
-/* Terminal colors (16 first used in escape sequence) */
-static const char *colorname[] = {
-	"#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-	"#cc241d",
-	"#98971a",
-	"#d79921",
-	"#458588",
-	"#b16286",
-	"#689d6a",
-	"#a89984",
-	"#928374",
-	"#fb4934",
-	"#b8bb26",
-	"#fabd2f",
-	"#83a598",
-	"#d3869b",
-	"#8ec07c",
-	"#ebdbb2",
-	[255] = 0,
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#282828",   /* 256 -> bg */
-	"#ebdbb2",   /* 257 -> fg */
-	"#add8e6", /* 258 -> cursor */
-};
-
-
+float alpha = 0.82;
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 257;
-unsigned int defaultbg = 256;
-static unsigned int defaultcs = 258;
-static unsigned int defaultrcs = 0;
+//unsigned int defaultfg = 257;
+//unsigned int defaultbg = 256;
+//static unsigned int defaultcs = 258;
+//static unsigned int defaultrcs = 0;
 
 /*
  * Default shape of cursor

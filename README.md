@@ -34,7 +34,7 @@ The [suckless terminal (st)](https://st.suckless.org/) with some additional feat
 ```
 git clone https://github.com/LukeSmithxyz/st
 cd st
-sudo make install
+[sudo](sudo) make install
 ```
 
 Users of Arch-based distros can also install it from the AUR as [st-luke-git](https://aur.archlinux.org/packages/st-luke-git/).
