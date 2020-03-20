@@ -5,12 +5,15 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "ProggyCleanTTCE Nerd Font Mono:size=12";
 
+//static char *font = "ProggyCleanTTCE Nerd Font Mono:size=12";
+//static char *font = "Fira Code Nerd Font:size=10";
+static char *font ="JetBrainsMono Nerd Font Mono:size=12";
 //static char *font = "Misc Termsyn:pixelsize=16:antialias=true:autohint=true";
 //static char *font2[] = { "Fira Code Regular Nerd Font Complete:pixelsize=16:antialias=true:autohint=true" };
 //static char *font2[] = {"Inconsolata for Powerline:pixelsize=16:antialias=true:autohint=true"};
-static char *font2[] = {"ProggyCleanTTCE Nerd Font Mono:size=12"};
+static char *font2[] = {"JetBrainsMono Nerd Font Mono:size=18:antialias=true:autohint=true"};
+//static char *font2[] = {"ProggyCleanTTCE Nerd Font Mono:size=12"};
 static int borderpx = 4;
 
 /*
